@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); 
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border-top: 6px solid #4CAF50; 
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+ul, ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    background: #f0f4ff;
+    border: 2px solid #64b5f6;
+    border-radius: 12px;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    gap: 12px;
+    transition: transform 0.2s;
+}
+
+.task-item:hover {
+    transform: translateY(-3px);
+}
+
+.task-checkbox {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    accent-color: #4CAF50; /* Modern checkbox color */
+}
+
+.task-text {
+    flex-grow: 1;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.edit-btn, .delete-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #d32f2f;
+}
+
+.delete-btn:hover {
+    background-color: #b71c1c;
+}
+
+.add-task {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #1976D2;
+}
+
+.empty-task {
+    color: #757575;
+    font-weight: bold;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #218838;
+}
